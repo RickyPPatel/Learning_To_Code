@@ -1,3 +1,6 @@
+# This program calculates how many months it will take you to save up enough money for a down payment.
+
+# defining variables
 annual_salary = float(input("Enter your annual salary: "))
 portion_saved = float(input("Enter the percent of your salary to save, as a decimal: "))
 total_cost = float(input("Enter the cost of your dream home:  "))
@@ -5,13 +8,15 @@ portion_down_payment = float(input("Enter the percent of your downpayment, as a 
 current_savings = float(input("Enter how much money you currently have saved:  "))
 invest = input("Will you put your savings in a saving account or invest it? Answer with yes if you will, anything else entered will be assumed as a no: ")
 
+# will they invest their savings and rate of investment
 if  (str.lower(invest)) == "yes":
     rate = float(input("Enter rate of investment such as saving account interest or an investment account rate of return, as a decimal:  "))
     pass
 elif (str.lower(invest)) == "no":
     rate = 0
     pass
-
+    
+#calculating number of months it will take
 down_payment = total_cost*portion_down_payment
 monthly_savings = annual_salary*portion_saved/12
 
