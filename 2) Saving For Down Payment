@@ -12,7 +12,7 @@ invest = input("Will you put your savings in a saving account or invest it? Answ
 if  (str.lower(invest)) == "yes":
     rate = float(input("Enter rate of investment such as saving account interest or an investment account rate of return, as a decimal:  "))
     pass
-elif (str.lower(invest)) == "no":
+else:
     rate = 0
     pass
     
